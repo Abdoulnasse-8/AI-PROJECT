@@ -26,8 +26,8 @@ class _StateView:
 
 
 class IntelligentPlayer(BasePlayer):
-    def __init__(self, name: str = "IntelligentPlayer") -> None:
-        super().__init__(name)
+    def __init__(self, player_id: int, name: str = "IntelligentPlayer") -> None:
+        super().__init__(player_id, name)
         self._rng = random.Random(0)
         self._transposition = {}
 
